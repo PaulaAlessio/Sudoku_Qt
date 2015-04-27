@@ -4,14 +4,15 @@
 
 TestDialog::TestDialog(){
 
+   
     QVBoxLayout* mainLayout = new QVBoxLayout(this);
     QHBoxLayout* upLayout = new QHBoxLayout;
     QHBoxLayout* downLayout = new QHBoxLayout;
    
     mainLayout->addLayout(upLayout);
+    mainLayout->addLayout(downLayout);
     setWindowTitle("Sudoku Solver");
     setGeometry(geometry().x(),geometry().y(),400,350);
-    mainLayout->addLayout(downLayout);
 
  
     QPushButton* loadButton = new QPushButton("Load");
